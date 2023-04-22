@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.todo-box {
+  width: 25%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 10rem;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  border-radius: 35px;
+  margin-top: 10px;
+}
+.todo input {
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  outline-style: none;
+}
+.todo button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+ul {
+  margin-top: 10px;
+}
+ul li {
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 17px;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 15px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-color: black;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+ul li span:hover {
+  background: #edeef0;
+}
